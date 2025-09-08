@@ -1,0 +1,41 @@
+{
+    "ads": [
+        {
+            "id": "01",
+            "name": "Гитара Fender",
+            "price": "20 000",
+            "location": "Москва",
+            "createdAt": "Сегодня 14:12",
+            "images": ["./Public/Fender.png"]
+        },
+
+        {
+            "id": "02",
+            "name": "Ford Mustang 5.0 AT, 2019, 66 000 км",
+            "price": "3 500 000",
+            "location": "Симферополь",
+            "createdAt": "Вчера 19:59",
+            "images": ["./Public/Ford-Mustang.png"]
+        },
+
+        {
+            "id": "03",
+            "name": "Phone 13 mini, 128 ГБ",
+            "price": "13 990",
+            "location": "Севастополь",
+            "createdAt": "21 августа 10:03",
+            "images": ["./Public/iphone13.png"]
+        },
+
+        {
+            "id": "04",
+            "name": "Кофемашина De'Longhi",
+            "price": "35 000",
+            "location": "Санкт-Петербург",
+            "createdAt": "Сегодня 09:45",
+            "images": ["./Public/DeLonghi.png"]
+        }
+
+    ]
+}
+
