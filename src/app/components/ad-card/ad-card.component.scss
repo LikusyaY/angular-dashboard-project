@@ -1,0 +1,74 @@
+.ad-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 306px;
+}
+
+.ad-card:hover {
+    cursor: pointer;
+}
+
+.ad-image {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 306px;
+    height: 240px;
+    border-radius: 4px; 
+}
+
+.ad-image img {
+    
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.2s ease-out;
+}
+
+.ad-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.ad-name {
+    color: #3B82F6;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    word-break: break-word;
+    transition: color 0.2s ease;
+}
+
+.ad-card:hover .ad-image img {
+  transform: scale(1.1);
+}
+
+.ad-card:hover .ad-description .ad-name {
+  color: #0EA5E9; 
+}
+
+.ad-price {
+    color: #1E293B;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.ad-location {
+    color: #64748B;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.ad-date {
+    color: #64748B;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
