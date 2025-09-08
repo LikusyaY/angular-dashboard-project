@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+@import "reset.css";
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap);
+
+// .container {
+//     width: 100%;
+//     max-width: 1296px;
+//     min-height: 100%;
+//     margin: auto;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     padding: 1rem;
+//     box-sizing: inherit;
+//     position: relative;
+// }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1296px;
+    margin: auto;
+}
+
+@media (max-width: 1330px) {
+    .container {
+        max-width: 1296px;
+        margin: auto;
+        padding: 0 10px;
+    }
+}
+
