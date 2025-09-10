@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from "../../components/header/header.component";
-import { AdsListComponent } from "../../components/ads-list/ads-list.component";
+import { HeaderComponent } from "../../shared/components/smart/header/header.component";
+import { AdsListComponent } from "../../shared/components/smart/ads-list/ads-list.component";
 
 @Component({
   selector: 'app-home',

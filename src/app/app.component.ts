@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-// import { HeaderComponent } from "./components/header/header.component";
-// import { AdsListComponent } from "./components/ads-list/ads-list.component";
-import { HomeComponent } from "./pages/home/home.component";
+import { HeaderComponent } from "./shared/components/smart/header/header.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HomeComponent],
+  imports: [RouterOutlet, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
