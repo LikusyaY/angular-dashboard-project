@@ -1,0 +1,15 @@
+<div class="card flex justify-center">
+    <p-button (click)="op.toggle($event)" icon="pi pi-bars" label="Все категории" styleClass="btn-categories" />
+    <p-popover #op>
+        <div class="flex flex-col gap-4 w-[25rem]">
+            <div class="container">
+                <div class="categories-container">
+                    <div class="card flex justify-center categories-menu">
+                        <p-panelmenu [model]="items" [style]="{'width':'282px'}" [multiple]="true" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </p-popover>
+</div>

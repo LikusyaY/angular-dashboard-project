@@ -1,0 +1,40 @@
+::ng-deep {
+  .p-panelmenu-panel {
+    --p-panelmenu-gap: 0.5rem;
+    // background-color: #f9f9f9;
+    border: 0;
+    padding: 0;
+  }
+  .p-panelmenu-header-link {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .p-panelmenu-header-link span {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .p-panelmenu-item-link {
+    justify-content: start;
+  }
+  .p-panelmenu-item-link span {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .p-panelmenu-panel:first-child {
+    border: 0;
+  }
+}
+
+.categories-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 306px;
+  // background: #f9f9f9;
+  border: none;
+}
