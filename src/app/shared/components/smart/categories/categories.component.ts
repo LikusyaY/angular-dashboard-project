@@ -57,6 +57,20 @@ export class CategoriesComponent implements OnInit {
           },
         ],
       },
+      {
+        label: 'Для дома и дачи',
+        items: [
+          {
+            label: 'Phone',
+          },
+          {
+            label: 'Desktop',
+          },
+          {
+            label: 'Tablet',
+          },
+        ],
+      },
     ];
   }
 }
