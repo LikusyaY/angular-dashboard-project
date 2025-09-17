@@ -1,3 +1,121 @@
+// .btn-categories {
+//   .p-button {
+//     display: flex;
+//     align-items: center;
+//     column-gap: 8px;
+//     height: 36px;
+//     padding: 0 12px;
+//     border: 1px solid #3b82f6;
+//     border-radius: 4px;
+//     background: #fff;
+//   }
+
+//   &:hover {
+//     border: 1px solid #fff;
+//     border-radius: 4px;
+//     background: #3b82f6;
+//   }
+// }
+
+// ::ng-deep {
+//   .p-button-label {
+//     color: #3b82f6;
+//     font-family: Inter, sans-serif;
+//     font-size: 14px;
+//     font-weight: 500 !important;
+//     line-height: 20px;
+//   }
+
+//   &:hover {
+//     color: #fff;
+//   }
+
+//   .p-button-icon {
+//     color: #3b82f6;
+//   }}
+::ng-deep {
+  .p-button {
+    font-family: Inter, sans-serif;
+  }
+  .p-popover {
+    width: 100%;
+    left: 0 !important;
+    border: none;
+  }
+
+  .p-popover::after,
+  .p-popover::before {
+    display: none;
+  }
+}
+
+// ::ng-deep {
+//   .p-panelmenu {
+//     border: none !important;
+//   }
+
+//   .p-panelmenu-list {
+//     padding: 0;
+//   }
+
+//   .p-panelmenu-item-content {
+//     width: 282px;
+//   }
+
+//   .p-panelmenu-item-link {
+//     padding: 8px 12px;
+//     font-family: Inter, sans-serif;
+//     font-size: 16px;
+//     font-weight: 400 !important;
+//     line-height: 20px;
+//     color: #1e293b;
+//   }
+// }
+
+// .categories-container {
+//   display: flex;
+//   width: 100%;
+//   background: #fff;
+// }
+
+// .categories-menu {
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+//   width: 306px;
+//   background: #f9f9f9;
+//   border: none;
+
+//   li {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 12px 16px;
+//     cursor: pointer;
+//     font-family: Inter, sans-serif;
+//     font-size: 16px;
+//     font-weight: 400 !important;
+//     line-height: 20px;
+//     color: #1e293b;
+//     transition: background 0.3s;
+//   }
+
+//   &:hover {
+//     background: #f5f5f5;
+//   }
+
+//   &.active {
+//     background: #f5f5f5;
+//   }
+// }
+
+// ::ng-deep {
+//   .p-panelmenu-submenu-ico::after,
+//   .p-panelmenu-submenu-ico::before {
+//     display: none;
+//   }
+// }
+
 ::ng-deep {
   .p-panelmenu-panel {
     --p-panelmenu-gap: 0.5rem;
@@ -25,9 +143,13 @@
     font-weight: 400;
     line-height: 24px;
   }
-  .p-panelmenu-panel:first-child {
+  .p-panelmenu-panel {
     border: 0;
   }
+
+  // .p-panelmenu-submenu-icon {
+  //   display: none;
+  // }
 }
 
 .categories-menu {
