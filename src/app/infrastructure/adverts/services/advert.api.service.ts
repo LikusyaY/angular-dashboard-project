@@ -1,9 +1,19 @@
-import { Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { AdvertSearchRequestDto, ShortAdvertDtoInterface } from '../dto';
+import { Observable } from 'rxjs';
+import { environment } from '../../../../environments/environment';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-export class AdvertApiService {
+export class AdvertsApiService {
+  private readonly http = inject(HttpClient);
 
-  constructor() { }
+  getList(filter: AdvertSearchRequestDto): Observable<ShortAdvertDtoInterface[]> {
+    return this.http.post<ShortAdvertDtoInterface[]>(
+      `${environment.baseApiURL}/Advert/search`,
+      filter,
+    );
+  }
 }
