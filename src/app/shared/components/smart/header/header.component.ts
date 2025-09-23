@@ -9,9 +9,11 @@ import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { HeaderSearchComponent } from '../header-search/header-search.component';
+import { NewAdvertBtnComponent } from '../new-advert-btn/new-advert-btn.component';
 
 @Component({
   selector: 'app-header',
+  standalone: true,
   imports: [
     CategoriesComponent,
     Dialog,
@@ -20,6 +22,7 @@ import { HeaderSearchComponent } from '../header-search/header-search.component'
     ReactiveFormsModule,
     PasswordModule,
     HeaderSearchComponent,
+    NewAdvertBtnComponent,
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
