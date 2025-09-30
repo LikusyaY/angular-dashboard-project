@@ -1,22 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { AdvertDtoInterface } from '../../../../infrastructure/adverts/dto/advert.dto.interface';
 
 @Component({
   selector: 'app-ad-card',
-  imports: [],
+  imports: [RouterModule, CommonModule],
   templateUrl: './ad-card.component.html',
-  styleUrl: './ad-card.component.scss'
+  styleUrl: './ad-card.component.scss',
 })
 export class AdCardComponent {
-
+  @Input() data!: AdvertDtoInterface;
 }
-
-// const adsData = require('public/ads.json');
-// console.log(adsData);
-
-// fetch('public/ads.json')
-//   .then(response => response.json())
-//   .then(adsData => console.log(adsData));
-
-// let adName = document.querySelector("ad-name");
-// let adPrice = document.querySelector("ad-price");
-

@@ -6,4 +6,5 @@ export interface ShortAdvertDtoInterface {
   createdAt: string;
   isActive: boolean;
   imagesIds: string[];
+  cost: number;
 }

@@ -2,18 +2,7 @@
     <div class="container">
         <h2 class="main-title">Рекомендации для вас</h2>
         <ul class="ads-list">
-            <app-ad-card></app-ad-card>
-            <app-ad-card></app-ad-card>
-            <app-ad-card></app-ad-card>
-            <app-ad-card></app-ad-card>
-            <app-ad-card></app-ad-card>
-            <app-ad-card></app-ad-card>
-            <app-ad-card></app-ad-card>
-            <app-ad-card></app-ad-card>
-            <app-ad-card></app-ad-card>
-            <app-ad-card></app-ad-card>
-            <app-ad-card></app-ad-card>
-            <app-ad-card></app-ad-card>
+            <app-ad-card *ngFor="let ad of adverts" [data]="ad"></app-ad-card>
         </ul>
     </div>
 </div>

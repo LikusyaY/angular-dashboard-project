@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-adverts-list',
   imports: [],
   templateUrl: './adverts-list.component.html',
-  styleUrl: './adverts-list.component.scss'
+  styleUrl: './adverts-list.component.scss',
 })
-export class AdvertsListComponent {
-
-}
+export class AdvertsListComponent {}

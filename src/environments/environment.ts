@@ -1,3 +1,3 @@
 export const environment = {
-  baseApiURL: "http://dzitskiy.ru:5000",
+  baseApiURL: 'http://dzitskiy.ru:5000',
 };

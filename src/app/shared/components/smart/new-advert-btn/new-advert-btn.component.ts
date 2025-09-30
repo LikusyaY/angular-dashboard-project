@@ -30,14 +30,6 @@ export class NewAdvertBtnComponent {
       return;
     }
 
-    this.router.navigate(['/ad-detailed-page']); // укажи свой путь
+    this.router.navigate(['/ad-detailed-page']);
   }
 }
-
-// onClick() {
-//   this.messageService.add({
-//     severity: 'error',
-//     summary: 'Необходимо пройти авторизацию.',
-//     life: 3000,
-//   });
-// }

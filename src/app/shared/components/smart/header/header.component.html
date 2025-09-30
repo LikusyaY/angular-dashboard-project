@@ -4,7 +4,7 @@
             <div class="header-active-block">
                 <div class="header-active-buttons">
                     <div class="card flex justify-center">
-                        <button class="header-active-buttons-signin" (click)="showDialog()">
+                        <button pButton class="header-active-buttons-signin" (click)="showDialog()">
                             <svg class="icon-person" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 viewBox="0 0 20 20" fill="currentColor">
                                 <path
@@ -13,7 +13,7 @@
                             </svg>
                             <span>Войти</span>
                         </button>
-                        <p-dialog header="Авторизация" [modal]="true" [(visible)]="visible" [style]="{ width: '26rem' }"
+                        <p-dialog header="Авторизация" [modal]="true" [(visible)]="visible"
                             styleClass="dialog-close-button">
 
                             <ng-template #header>
@@ -21,12 +21,18 @@
                             </ng-template>
 
                             <div class="dialog-main">
-                                <input type="text" pInputText formControlName="text" placeholder="Номер телефона" />
+                                <div class="dialog-main-inputs">
+                                    <input type="text" pInputText placeholder="Номер телефона" />
+                                    <p-password [(ngModel)]="value" [feedback]="false" placeholder="Пароль" />
+                                </div>
+                                <div class="dialog-main-btns">
 
-                                <form [formGroup]="formGroup">
-                                    <p-password formControlName="value" [feedback]="false" placeholder="Пароль" />
-                                    <!-- <label for="on_label">Введите пароль</label> -->
-                                </form>
+                                    <div class="card flex justify-center">
+                                        <p-checkbox [(ngModel)]="checked" [binary]="true" />
+                                        <span class="btn-remember">Запомнить меня</span>
+                                    </div>
+                                    <p-button label="Забыли пароль?" [link]="true" class="btn-link" />
+                                </div>
                             </div>
 
                             <ng-template #footer>
@@ -46,15 +52,6 @@
                 <div class="header-main-block-menu">
                     <h1 class="site-title">Доска объявлений</h1>
                     <div class="menu-nav">
-                        <!-- <button class="btn-categories" (click)="goToComponentCategories()" id="categoriesButton">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                fill="currentColor" class="list-nested-icon">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M5.625 14.375C5.625 14.2092 5.69085 14.0503 5.80806 13.9331C5.92527 13.8158 6.08424 13.75 6.25 13.75H18.75C18.9158 13.75 19.0747 13.8158 19.1919 13.9331C19.3092 14.0503 19.375 14.2092 19.375 14.375C19.375 14.5408 19.3092 14.6997 19.1919 14.8169C19.0747 14.9342 18.9158 15 18.75 15H6.25C6.08424 15 5.92527 14.9342 5.80806 14.8169C5.69085 14.6997 5.625 14.5408 5.625 14.375ZM3.125 9.375C3.125 9.20924 3.19085 9.05027 3.30806 8.93306C3.42527 8.81585 3.58424 8.75 3.75 8.75H16.25C16.4158 8.75 16.5747 8.81585 16.6919 8.93306C16.8092 9.05027 16.875 9.20924 16.875 9.375C16.875 9.54076 16.8092 9.69973 16.6919 9.81694C16.5747 9.93415 16.4158 10 16.25 10H3.75C3.58424 10 3.42527 9.93415 3.30806 9.81694C3.19085 9.69973 3.125 9.54076 3.125 9.375ZM0.625 4.375C0.625 4.20924 0.690848 4.05027 0.808058 3.93306C0.925268 3.81585 1.08424 3.75 1.25 3.75H13.75C13.9158 3.75 14.0747 3.81585 14.1919 3.93306C14.3092 4.05027 14.375 4.20924 14.375 4.375C14.375 4.54076 14.3092 4.69973 14.1919 4.81694C14.0747 4.93415 13.9158 5 13.75 5H1.25C1.08424 5 0.925268 4.93415 0.808058 4.81694C0.690848 4.69973 0.625 4.54076 0.625 4.375Z"
-                                    fill="currentColor" />
-                            </svg>
-                            <span>Все категории</span>
-                        </button> -->
                         <app-categories class="categories"></app-categories>
                         <app-header-search class="menu-nav-search "></app-header-search>
 
