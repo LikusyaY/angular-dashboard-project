@@ -1,0 +1,22 @@
+<div class="card flex justify-center">
+    <!-- <p-button (click)="op.toggle($event)" icon="pi pi-bars" label="Все категории" styleClass="btn-categories" /> -->
+    <button class="btn-categories" (click)="op.toggle($event)" id="categoriesButton">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"
+            class="list-nested-icon">
+            <path [attr.d]="isActive ? pathActive : pathDefault" fill="currentColor" [class.active]="isActive" />
+        </svg>
+        <span>Все категории</span>
+    </button>
+    <p-popover #op (onShow)="isActive = true" (onHide)="isActive = false">
+        <div class="flex flex-col gap-4 w-[25rem]">
+            <div class="container">
+                <div class="categories-container">
+                    <div class="card flex justify-center categories-menu">
+                        <p-panelmenu [model]="items" [style]="{'width':'282px'}" [multiple]="true" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </p-popover>
+</div>

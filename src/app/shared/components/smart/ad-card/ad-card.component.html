@@ -1,0 +1,15 @@
+<li class="ad-card">
+    <a [routerLink]="['/advert-page/']">
+        <!-- TODO вернуться после завершения работ по детальной странице -->
+        <!-- <a [routerLink]="['/ad-detailed-page/', data.id]"> -->
+        <div class="ad-image">
+            <img [src]="data.image" alt="ad-image" />
+        </div>
+        <div class="ad-description">
+            <h5 class="ad-name">{{ data.name }}</h5>
+            <h6 class="ad-price">{{ data.price }}</h6>
+            <div class="ad-location">{{ data.location }}</div>
+            <div class="ad-date">{{ data.date| date:'dd.MM.yyyy HH:mm' }}</div>
+        </div>
+    </a>
+</li>

@@ -1,1 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'reset.css';
+@import 'primeicons/primeicons.css';
+// @import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap);
+
+// .container {
+//     width: 100%;
+//     max-width: 1296px;
+//     min-height: 100%;
+//     margin: auto;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     padding: 1rem;
+//     box-sizing: inherit;
+//     position: relative;
+// }
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-VariableFont_opsz\,wght.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1296px;
+  margin: auto;
+}
+
+@media (max-width: 1330px) {
+  .container {
+    max-width: 1296px;
+    margin: auto;
+    padding: 0 10px;
+  }
+}
+
+// .p-button {
+//   border: 0;
+// }
+
+// .icon-search {
+//   width: 20px;
+//   height: 20px;
+// }
+
+svg,
+.icon-person,
+.icon-plus,
+.icon-search {
+  width: 20px;
+  height: 20px;
+}
