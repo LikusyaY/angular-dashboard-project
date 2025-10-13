@@ -5,10 +5,11 @@ import { AdvertsApiService } from '../../../../infrastructure/adverts/services';
 import { AdvertDtoInterface } from '../../../../infrastructure/adverts/dto/advert.dto.interface';
 import { environment } from '../../../../../environments/environment';
 import { NgFor } from '@angular/common';
+import { SlicePipe } from '@angular/common';
 
 @Component({
   selector: 'app-ads-list',
-  imports: [AdCardComponent, NgFor],
+  imports: [AdCardComponent, NgFor, SlicePipe],
   templateUrl: './ads-list.component.html',
   styleUrl: './ads-list.component.scss',
 })
