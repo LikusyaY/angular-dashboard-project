@@ -1,0 +1,176 @@
+.main-title {
+  margin: 32px 0;
+  color: #1e293b;
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+// .ads-list {
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   justify-content: center;
+//   column-gap: 24px;
+//   row-gap: 32px;
+//   margin-bottom: 80px;
+// }
+
+@media (max-width: 1300px) {
+  .main-title {
+    margin: 64px 0 24px 0;
+  }
+}
+
+.new-advert {
+  width: 306px;
+  height: 336px;
+  background-color: rgba(59, 130, 246, 0.04);
+  // border: 3px dashed rgba(59, 130, 246, 0.16);
+  //border из генератора
+  background-image:
+    repeating-linear-gradient(90deg, #3b82f629, #3b82f629 16px, transparent 16px, transparent 32px),
+    repeating-linear-gradient(
+      180deg,
+      #3b82f629,
+      #3b82f629 16px,
+      transparent 16px,
+      transparent 32px
+    ),
+    repeating-linear-gradient(90deg, #3b82f629, #3b82f629 16px, transparent 16px, transparent 32px),
+    repeating-linear-gradient(180deg, #3b82f629, #3b82f629 16px, transparent 16px, transparent 32px);
+  background-position:
+    left top,
+    right top,
+    left bottom,
+    left top;
+  background-repeat: repeat-x, repeat-y, repeat-x, repeat-y;
+  background-size:
+    100% 3px,
+    3px 100%,
+    100% 3px,
+    3px 100%;
+
+  &:hover {
+    background-color: rgba(59, 131, 246, 0.08);
+    transition: all 0.2s ease;
+    background-image:
+      repeating-linear-gradient(
+        90deg,
+        #3b82f652,
+        #3b82f652 16px,
+        transparent 16px,
+        transparent 32px
+      ),
+      repeating-linear-gradient(
+        180deg,
+        #3b82f652,
+        #3b82f652 16px,
+        transparent 16px,
+        transparent 32px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        #3b82f652,
+        #3b82f652 16px,
+        transparent 16px,
+        transparent 32px
+      ),
+      repeating-linear-gradient(
+        180deg,
+        #3b82f652,
+        #3b82f652 16px,
+        transparent 16px,
+        transparent 32px
+      );
+    background-position:
+      left top,
+      right top,
+      left bottom,
+      left top;
+    background-repeat: repeat-x, repeat-y, repeat-x, repeat-y;
+    background-size:
+      100% 3px,
+      3px 100%,
+      100% 3px,
+      3px 100%;
+  }
+
+  &:active {
+    background-color: rgba(39, 110, 226, 0.04);
+    transition: all 0.2s ease;
+    background-image:
+      repeating-linear-gradient(
+        90deg,
+        #276ee229,
+        #276ee229 16px,
+        transparent 16px,
+        transparent 32px
+      ),
+      repeating-linear-gradient(
+        180deg,
+        #276ee229,
+        #276ee229 16px,
+        transparent 16px,
+        transparent 32px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        #276ee229,
+        #276ee229 16px,
+        transparent 16px,
+        transparent 32px
+      ),
+      repeating-linear-gradient(
+        180deg,
+        #276ee229,
+        #276ee229 16px,
+        transparent 16px,
+        transparent 32px
+      );
+    background-position:
+      left top,
+      right top,
+      left bottom,
+      left top;
+    background-repeat: repeat-x, repeat-y, repeat-x, repeat-y;
+    background-size:
+      100% 3px,
+      3px 100%,
+      100% 3px,
+      3px 100%;
+  }
+
+  &:active svg {
+    fill: #1e3a8a;
+    transition: all 0.2s ease;
+  }
+
+  &:active h6 {
+    color: #1e3a8a;
+    transition: all 0.2s ease;
+  }
+}
+
+.new-advert-title {
+  color: #3b82f6;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.new-adwert-icon {
+  width: 60px;
+  height: 60px;
+  fill: #3b82f6;
+}
+
+.new-advert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}

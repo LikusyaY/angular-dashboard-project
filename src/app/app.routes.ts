@@ -5,12 +5,18 @@ export const routes: Routes = [
   {
     path: 'recommendations',
     loadComponent: () =>
-      import('./shared/components/smart/ads-list/ads-list.component').then(
-        (m) => m.AdsListComponent,
+      import('./pages/recommendations/recommendations.component').then(
+        (m) => m.RecommendationsComponent,
       ),
   },
   {
     path: 'advert-page',
     loadComponent: () => import('./pages/advert/advert.component').then((m) => m.AdvertComponent),
+  },
+
+  {
+    path: 'my-ads',
+    loadComponent: () =>
+      import('./pages/lk/user-ads/user-ads.component').then((m) => m.UserAdsComponent),
   },
 ];
